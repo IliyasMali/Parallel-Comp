@@ -1,0 +1,108 @@
+{
+  "stencil": "5-point average stencil (4 additions + one division per output; 5 FLOPs/output)",
+  "arithmetic_intensity_flop_per_byte": 0.10416666666666667,
+  "memory_bytes_model": "5 input doubles + 1 output double per output (no cache reuse): 48 B/output; spatial reuse can reduce DRAM traffic",
+  "memory_bandwidth_peak_gb_s": 100,
+  "memory_bandwidth_source": "Apple MacBook Air M3 official technical specifications; host model reported as Apple M3, exact product variant not verified",
+  "amdahl_serial_fraction_estimate_constrained_least_squares": 1.0,
+  "amdahl_fit_speedups": {
+    "1": 1.0,
+    "2": 1.0,
+    "4": 1.0,
+    "8": 1.0
+  },
+  "amdahl_asymptotic_speedup": 1.0,
+  "classification": "Low arithmetic intensity suggests a memory-bandwidth-sensitive regime; a rigorous roofline bound needs peak CPU FLOP/s for this exact host configuration. Timings include process startup and shared-memory overhead.",
+  "strong_scaling_rows": [
+    {
+      "study": "strong",
+      "processes": 1,
+      "dimension": 1536,
+      "median_seconds": 0.0679894999999533,
+      "speedup": 1.0,
+      "efficiency_percent": 100.0,
+      "karp_flatt": null,
+      "scaled_speedup": null,
+      "checksum": 1176090.2178028887
+    },
+    {
+      "study": "strong",
+      "processes": 2,
+      "dimension": 1536,
+      "median_seconds": 0.06448020799996357,
+      "speedup": 1.0544243281596068,
+      "efficiency_percent": 52.72121640798034,
+      "karp_flatt": 0.8967695894221275,
+      "scaled_speedup": null,
+      "checksum": 1176090.2178028887
+    },
+    {
+      "study": "strong",
+      "processes": 4,
+      "dimension": 1536,
+      "median_seconds": 0.06775058299990633,
+      "speedup": 1.0035264198397718,
+      "efficiency_percent": 25.088160495994295,
+      "karp_flatt": 0.9953146294639194,
+      "scaled_speedup": null,
+      "checksum": 1176090.2178028887
+    },
+    {
+      "study": "strong",
+      "processes": 8,
+      "dimension": 1536,
+      "median_seconds": 0.09777450000001409,
+      "speedup": 0.695370469804944,
+      "efficiency_percent": 8.6921308725618,
+      "karp_flatt": 1.5006655439456513,
+      "scaled_speedup": null,
+      "checksum": 1176090.2178028885
+    }
+  ],
+  "weak_scaling_rows": [
+    {
+      "study": "weak",
+      "processes": 1,
+      "dimension": 1536,
+      "median_seconds": 0.0653244589999531,
+      "speedup": null,
+      "efficiency_percent": null,
+      "karp_flatt": null,
+      "scaled_speedup": 1.0407969853987173,
+      "checksum": 1176090.2178028887
+    },
+    {
+      "study": "weak",
+      "processes": 2,
+      "dimension": 2173,
+      "median_seconds": 0.06838166699992598,
+      "speedup": null,
+      "efficiency_percent": null,
+      "karp_flatt": null,
+      "scaled_speedup": 0.99356237741943,
+      "checksum": 2356673.2213855903
+    },
+    {
+      "study": "weak",
+      "processes": 4,
+      "dimension": 3072,
+      "median_seconds": 0.08020404100000178,
+      "speedup": null,
+      "efficiency_percent": null,
+      "karp_flatt": null,
+      "scaled_speedup": 0.8477066635576602,
+      "checksum": 4713203.536324335
+    },
+    {
+      "study": "weak",
+      "processes": 8,
+      "dimension": 4345,
+      "median_seconds": 0.14003770800002258,
+      "speedup": null,
+      "efficiency_percent": null,
+      "karp_flatt": null,
+      "scaled_speedup": 0.48538875422453165,
+      "checksum": 9432988.419803023
+    }
+  ]
+}
