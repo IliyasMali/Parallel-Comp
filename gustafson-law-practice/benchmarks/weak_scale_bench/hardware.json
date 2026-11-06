@@ -1,0 +1,10 @@
+{
+  "platform": "macOS-15.2-arm64-arm-64bit-Mach-O",
+  "processor": "Apple M3",
+  "physical_cores": 8,
+  "logical_cores": 8,
+  "memory_bytes": 8589934592,
+  "python": "3.13.2",
+  "numpy": "2.5.4",
+  "timestamp_utc": "2026-11-06T11:57:13.837323+00:00"
+}

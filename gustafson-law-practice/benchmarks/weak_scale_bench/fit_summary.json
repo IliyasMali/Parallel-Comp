@@ -1,0 +1,144 @@
+{
+  "alpha_observed": 1.108024561071632,
+  "r_squared": -13.355102525595438,
+  "by_worker_count": [
+    {
+      "workers": 1,
+      "n_runs": 5,
+      "t_parallel_mean_sec": 0.06238682499970309,
+      "t_parallel_sd_sec": 0.0009510339105399148,
+      "t_serial_mean_sec": 0.008346958609763533,
+      "t_serial_sd_sec": 0.00011975816131129775,
+      "speedup_mean": 0.1338132878469147,
+      "speedup_sd": 0.0024706722136841617,
+      "speedup_se": 0.0011049182039835344
+    },
+    {
+      "workers": 2,
+      "n_runs": 5,
+      "t_parallel_mean_sec": 0.06466951679321938,
+      "t_parallel_sd_sec": 0.0009239003873900216,
+      "t_serial_mean_sec": 0.016186099994229153,
+      "t_serial_sd_sec": 0.000797275044114531,
+      "speedup_mean": 0.25037934054200367,
+      "speedup_sd": 0.013953514266730003,
+      "speedup_se": 0.006240201285084283
+    },
+    {
+      "workers": 3,
+      "n_runs": 5,
+      "t_parallel_mean_sec": 0.06836812499677762,
+      "t_parallel_sd_sec": 0.000566397284023487,
+      "t_serial_mean_sec": 0.0234095751948189,
+      "t_serial_sd_sec": 0.0005189936585603801,
+      "speedup_mean": 0.34239991827756394,
+      "speedup_sd": 0.00667741599220448,
+      "speedup_se": 0.0029862312145226846
+    },
+    {
+      "workers": 4,
+      "n_runs": 5,
+      "t_parallel_mean_sec": 0.07297756660263985,
+      "t_parallel_sd_sec": 0.0009387472646626219,
+      "t_serial_mean_sec": 0.030410350201418624,
+      "t_serial_sd_sec": 0.0003319086228718889,
+      "speedup_mean": 0.4167723499917334,
+      "speedup_sd": 0.007701620186573579,
+      "speedup_se": 0.003444269254812627
+    },
+    {
+      "workers": 5,
+      "n_runs": 5,
+      "t_parallel_mean_sec": 0.08329727500095033,
+      "t_parallel_sd_sec": 0.0011988653467874678,
+      "t_serial_mean_sec": 0.03795110820792615,
+      "t_serial_sd_sec": 0.0006186992256633665,
+      "speedup_mean": 0.45563728854637453,
+      "speedup_sd": 0.006482677130677234,
+      "speedup_se": 0.0028991413480755164
+    },
+    {
+      "workers": 6,
+      "n_runs": 5,
+      "t_parallel_mean_sec": 0.09206824179273099,
+      "t_parallel_sd_sec": 0.002287791259154347,
+      "t_serial_mean_sec": 0.04546901638968848,
+      "t_serial_sd_sec": 0.00045702185639676606,
+      "speedup_mean": 0.4941229168681104,
+      "speedup_sd": 0.014026654553038798,
+      "speedup_se": 0.006272910615500336
+    },
+    {
+      "workers": 7,
+      "n_runs": 5,
+      "t_parallel_mean_sec": 0.10091979979770258,
+      "t_parallel_sd_sec": 0.0008672354262240976,
+      "t_serial_mean_sec": 0.0520186165929772,
+      "t_serial_sd_sec": 0.0010277529677811667,
+      "speedup_mean": 0.5154422829722358,
+      "speedup_sd": 0.009022649840205352,
+      "speedup_se": 0.004035051675975356
+    },
+    {
+      "workers": 8,
+      "n_runs": 5,
+      "t_parallel_mean_sec": 0.13291087499819695,
+      "t_parallel_sd_sec": 0.028801918996655306,
+      "t_serial_mean_sec": 0.06068837500642985,
+      "t_serial_sd_sec": 0.001958271761005453,
+      "speedup_mean": 0.47217825521996293,
+      "speedup_sd": 0.09009114753643586,
+      "speedup_se": 0.04028998601248666
+    }
+  ],
+  "fitted_curves": [
+    {
+      "workers": 1,
+      "observed_speedup": 0.1338132878469147,
+      "gustafson_fitted_speedup": 1.0,
+      "amdahl_same_alpha_speedup": 1.0
+    },
+    {
+      "workers": 2,
+      "observed_speedup": 0.25037934054200367,
+      "gustafson_fitted_speedup": 0.8919754389283681,
+      "amdahl_same_alpha_speedup": 0.9487555491209662
+    },
+    {
+      "workers": 3,
+      "observed_speedup": 0.34239991827756394,
+      "gustafson_fitted_speedup": 0.7839508778567361,
+      "amdahl_same_alpha_speedup": 0.9328215727005803
+    },
+    {
+      "workers": 4,
+      "observed_speedup": 0.4167723499917334,
+      "gustafson_fitted_speedup": 0.6759263167851044,
+      "amdahl_same_alpha_speedup": 0.9250536168074844
+    },
+    {
+      "workers": 5,
+      "observed_speedup": 0.45563728854637453,
+      "gustafson_fitted_speedup": 0.5679017557134722,
+      "amdahl_same_alpha_speedup": 0.9204546337612712
+    },
+    {
+      "workers": 6,
+      "observed_speedup": 0.4941229168681104,
+      "gustafson_fitted_speedup": 0.45987719464184007,
+      "amdahl_same_alpha_speedup": 0.9174139658485235
+    },
+    {
+      "workers": 7,
+      "observed_speedup": 0.5154422829722358,
+      "gustafson_fitted_speedup": 0.3518526335702088,
+      "amdahl_same_alpha_speedup": 0.9152543308364165
+    },
+    {
+      "workers": 8,
+      "observed_speedup": 0.47217825521996293,
+      "gustafson_fitted_speedup": 0.24382807249857663,
+      "amdahl_same_alpha_speedup": 0.9136412654111513
+    }
+  ]
+}
